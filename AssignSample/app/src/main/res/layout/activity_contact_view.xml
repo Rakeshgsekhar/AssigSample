@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webatron.rakesh.assignsample.ContactView">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/toolimg"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="280dp"
+                android:maxWidth="280dp"
+                android:textSize="25sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbarname"
+                android:textColor="#ffffff"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/tools"
+        android:id="@+id/contactfiles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/fileimg"/>
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:maxWidth="150dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/fileimg"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"/>
+</RelativeLayout>
